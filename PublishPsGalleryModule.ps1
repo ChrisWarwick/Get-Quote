@@ -49,7 +49,10 @@ Script Help
 Version History:
 ---------------
 
-V1.1 (Current Version) November 2015
+V1.2 (Current Version) November 2015
+> Added alias; tidied tags
+
+V1.1 November 2015
 > Update to Readme
   
 V1.0 

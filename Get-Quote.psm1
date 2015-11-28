@@ -28,15 +28,6 @@ value if truly large files are being processed...
 
 #Requires -Version 2
 
-$Tags = @(
-    'Quote'
-    'Cookie'
-    'Fortune'
-    'MOTD'
-    'PowerShell'
-    'FileStream'
-    'Seek'
-)
 
 <#
 .Synopsis
@@ -52,6 +43,7 @@ $Tags = @(
 #>
 Function Get-Quote {
 [OutputType([String])]
+[Alias('Cookie')]
 Param (
     $QuoteFile = '.\Fortunes.dat'
 )
