@@ -43,7 +43,7 @@ value if truly large files are being processed...
   The path pointing to the quotes file
 #>
 Function Find-QuoteFile {	 
-    $ProjectRoot = Split-Path -Parent $Script:PSCommandPath
+    $ProjectRoot = Split-Path -Parent $Script:MyInvocation.MyCommand.Definition
     Join-Path $ProjectRoot 'Fortunes.dat'
 
 }
