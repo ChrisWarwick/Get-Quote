@@ -29,6 +29,26 @@ value if truly large files are being processed...
 #Requires -Version 2
 
 
+
+<#
+.Synopsis
+  Searches for the file containing the huge list of quotes
+
+.Example
+  Find-ModuleQuoteFile
+  C:\Users\john\Documents\WindowsPowerShell\Modules\Get-Quote\Fortunes.dat
+
+.Outputs
+  [System.String]
+  The path pointing to the quotes file
+#>
+Function Find-QuoteFile {	 
+    $ProjectRoot = Split-Path -Parent $Script:PSCommandPath
+    Join-Path $ProjectRoot 'Fortunes.dat'
+
+}
+
+
 <#
 .Synopsis
     This function displays a randomly chosen quote from a quote file
@@ -45,9 +65,12 @@ Function Get-Quote {
 [OutputType([String])]
 [Alias('Cookie')]
 Param (
-    $QuoteFile = '.\Fortunes.dat'
+    [String] $QuoteFile
 )
-
+    If ( -not $QuoteFile ) {
+        $QuoteFile = Find-QuoteFile
+    }
+    
     # Use a filestream to randomly read the quote file
     $FileStreamArgs = @(
         $QuoteFile
