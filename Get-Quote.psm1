@@ -45,7 +45,7 @@ Function Get-Quote {
 [OutputType([String])]
 [Alias('Cookie')]
 Param (
-    $QuoteFile = '.\Fortunes.dat'
+    $QuoteFile = "$PsScriptRoot\Fortunes.dat"
 )
 
     # Use a filestream to randomly read the quote file
