@@ -46,8 +46,11 @@ Script Help
 Version History:
 ---------------
 
-V1.3 (Current Version) July 2017
+V1.5 (Current Version) July 2017
 > Fixed bug with quote file path; Updated comments.
+
+V1.3 - 1.4 (Dev Versions) July 2017
+> Just messin' with VSCode & GitHub.
 
 V1.2 November 2015
 > Added alias; tidied tags
