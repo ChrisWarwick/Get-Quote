@@ -51,7 +51,7 @@ Version History:
 V1.3 (Current Version) July 2017
 > Fixed bug with quote file path; Updated comments.
 
-V1.2 (Current Version) November 2015
+V1.2 November 2015
 > Added alias; tidied tags
 
 V1.1 November 2015
