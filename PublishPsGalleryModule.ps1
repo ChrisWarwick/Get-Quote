@@ -87,8 +87,8 @@ $Tags = @(
 
 
 $PublishParams = @{
-    Name            = 'Get-Quote'
-    NuGetApiKey     = 'XXXXRedactedXXXX'
+    Name            = '.\Get-Quote'
+    NuGetApiKey     = 'bbc12fa1-c711-4b4f-8f51-a6feb243bf90'
     ReleaseNotes    = $ReleaseNotes
     Tags            = $Tags
     ProjectUri      = 'https://github.com/ChrisWarwick/Get-Quote'
